@@ -11,6 +11,7 @@ import android.widget.Toast
  */
 object MyToast {
     private var sToast: Toast? = null
+    @JvmStatic
     fun init(context: Context?) {
         if (sToast == null) {
             sToast = Toast.makeText(context, "toast", Toast.LENGTH_SHORT)
