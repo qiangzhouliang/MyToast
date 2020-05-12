@@ -17,6 +17,7 @@ object MyToast {
         }
     }
 
+    @JvmStatic
     fun showShort(msg: String?) {
         if (sToast == null) {
             throw RuntimeException("Toast  not init")
@@ -27,6 +28,7 @@ object MyToast {
         }
     }
 
+    @JvmStatic
     fun showLong(msg: String?) {
         if (sToast == null) {
             throw RuntimeException("Toast  not init")
