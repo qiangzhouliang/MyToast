@@ -27,5 +27,8 @@ MyToast.init(this)
 ~~~
 MyToast.showShort("xxx")
 ~~~
+# 3 版本更新说明
+## 3.1 1.0.1 版本
+只是将系统默认的Toast做了封装，实现一行弹出Toast的功能
 
 

@@ -21,9 +21,9 @@ object MyToast {
         if (sToast == null) {
             throw RuntimeException("Toast  not init")
         } else {
-            sToast!!.duration = Toast.LENGTH_SHORT
-            sToast!!.setText(msg)
-            sToast!!.show()
+            sToast?.duration = Toast.LENGTH_SHORT
+            sToast?.setText(msg)
+            sToast?.show()
         }
     }
 
@@ -31,9 +31,9 @@ object MyToast {
         if (sToast == null) {
             throw RuntimeException("Toast  not init")
         } else {
-            sToast!!.duration = Toast.LENGTH_LONG
-            sToast!!.setText(msg)
-            sToast!!.show()
+            sToast?.duration = Toast.LENGTH_LONG
+            sToast?.setText(msg)
+            sToast?.show()
         }
     }
 }
