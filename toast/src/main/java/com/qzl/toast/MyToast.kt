@@ -2,6 +2,7 @@ package com.qzl.toast
 
 import android.content.Context
 import android.widget.Toast
+import kotlin.Exception
 
 /**
  * @author 强周亮(qiangzhouliang)
@@ -20,23 +21,31 @@ object MyToast {
 
     @JvmStatic
     fun showShort(msg: String?) {
-        if (sToast == null) {
-            throw RuntimeException("Toast  not init")
-        } else {
-            sToast?.duration = Toast.LENGTH_SHORT
-            sToast?.setText(msg)
-            sToast?.show()
+        try {
+            if (sToast == null) {
+                throw RuntimeException("Toast  not init")
+            } else {
+                sToast?.duration = Toast.LENGTH_SHORT
+                sToast?.setText(msg)
+                sToast?.show()
+            }
+        } catch (e:Exception){
+
         }
     }
 
     @JvmStatic
     fun showLong(msg: String?) {
-        if (sToast == null) {
-            throw RuntimeException("Toast  not init")
-        } else {
-            sToast?.duration = Toast.LENGTH_LONG
-            sToast?.setText(msg)
-            sToast?.show()
+        try {
+            if (sToast == null) {
+                throw RuntimeException("Toast  not init")
+            } else {
+                sToast?.duration = Toast.LENGTH_LONG
+                sToast?.setText(msg)
+                sToast?.show()
+            }
+        } catch (e:Exception){
+
         }
     }
 }

@@ -1,6 +1,6 @@
 # MyToast
 一行代码实现toast弹窗  
-使用地址：https://jitpack.io/#qiangzhouliang/MyToast/1.0.2
+使用地址：https://jitpack.io/#qiangzhouliang/MyToast
 # 1 如何引入自己的项目
 ## 1.1 将JitPack存储库添加到您的构建文件中
 将其添加到存储库末尾的root（项目） build.gradle中：
@@ -13,9 +13,10 @@ allprojects {
 	}
 ~~~
 ## 1.2 添加依赖项
+lastestVersion = [![](https://jitpack.io/v/qiangzhouliang/MyToast.svg)](https://jitpack.io/#qiangzhouliang/MyToast)
 ~~~
 dependencies {
-	  implementation 'com.github.qiangzhouliang:MyToast:1.0.2'
+	  implementation 'com.github.qiangzhouliang:MyToast:$lastestVersion'
 }
 ~~~
 # 2 如何使用
